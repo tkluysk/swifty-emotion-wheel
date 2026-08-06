@@ -29,7 +29,9 @@
     const allIds = [];
     for (const core of data.core) {
       for (const mid of core.mid) {
-        for (const outer of mid.outer) allIds.push(outer.spotifyId);
+        for (const outer of mid.outer) {
+          if (outer.spotifyId) allIds.push(outer.spotifyId);
+        }
       }
     }
     fetch(`${metadataUrl}?ids=${allIds.join(",")}`)
@@ -160,24 +162,30 @@
       for (const outer of mid.outer) {
         const outerStart = outerCursor;
         const outerEnd = outerCursor + outerAngleSpan;
+        const hasSong = Boolean(outer.spotifyId);
         const outerColor = shade(coreColor, 30);
 
         const outerPath = makeEl("path", {
           d: arcPath(R_MID, R_OUTER, outerStart, outerEnd),
           fill: outerColor,
-          class: "segment",
-          tabindex: "0",
-          role: "button",
-          "aria-label": `${outer.name}: ${outer.song}`,
+          class: "segment" + (hasSong ? "" : " no-song"),
+          "aria-label": hasSong ? `${outer.name}: ${outer.song}` : `${outer.name}: no song mapped yet`,
         });
+        if (hasSong) {
+          outerPath.setAttribute("tabindex", "0");
+          outerPath.setAttribute("role", "button");
+        }
         outerPath.dataset.feeling = outer.name;
-        outerPath.dataset.song = outer.song;
-        outerPath.dataset.album = outer.album;
-        outerPath.dataset.spotifyId = outer.spotifyId;
         outerPath.dataset.core = core.name;
         outerPath.dataset.mid = mid.name;
+        if (hasSong) {
+          outerPath.dataset.song = outer.song;
+          outerPath.dataset.album = outer.album;
+          outerPath.dataset.spotifyId = outer.spotifyId;
+        }
 
         const select = () => {
+          if (!hasSong) return;
           if (selectedSegment) selectedSegment.classList.remove("selected");
           outerPath.classList.add("selected");
           selectedSegment = outerPath;
