@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swifty Emotion Wheel</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Swifty Emotion Wheel</h1>
+    <p class="subtitle">Click a feeling to hear the Taylor Swift song that fits it.</p>
+  </header>
+
+  <main>
+    <div id="wheel-container">
+      <svg id="wheel" viewBox="0 0 800 800" role="img" aria-label="Emotion wheel"></svg>
+    </div>
+
+    <aside id="panel">
+      <div id="panel-empty">
+        <p>Pick any feeling on the wheel to see its Taylor Swift song.</p>
+      </div>
+      <div id="panel-song" hidden>
+        <div class="breadcrumb" id="breadcrumb"></div>
+        <h2 id="song-feeling"></h2>
+        <img id="song-art" alt="" hidden />
+        <p id="song-title"></p>
+        <p id="song-album"></p>
+        <div id="player-wrap">
+          <iframe
+            id="player"
+            title="Spotify player"
+            style="border-radius:12px"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Wheel structure inspired by <a href="https://www.junto.co.uk/" target="_blank" rel="noopener">The Junto Institute's</a> Emotion &amp; Feeling Wheel. Not affiliated with Taylor Swift or Spotify.</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/wheel.js"></script>
+</body>
+</html>

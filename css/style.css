@@ -1,0 +1,177 @@
+:root {
+  --bg: #0f0f14;
+  --panel-bg: #191922;
+  --text: #f2f2f5;
+  --text-dim: #a3a3ad;
+  --accent: #1db954;
+  --border: #2c2c38;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f7fb;
+    --panel-bg: #ffffff;
+    --text: #1a1a22;
+    --text-dim: #5a5a66;
+    --accent: #1db954;
+    --border: #e3e3ec;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 0.5rem;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.9rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: var(--text-dim);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#wheel-container {
+  width: min(640px, 92vw);
+  flex-shrink: 0;
+}
+
+#wheel {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.segment {
+  cursor: pointer;
+  stroke: var(--bg);
+  stroke-width: 1.5;
+  transition: filter 0.15s ease, transform 0.15s ease;
+  transform-origin: 400px 400px;
+}
+
+.segment:hover,
+.segment:focus-visible {
+  filter: brightness(1.18);
+  outline: none;
+}
+
+.segment.selected {
+  filter: brightness(1.3);
+  stroke: var(--text);
+  stroke-width: 2.5;
+}
+
+.segment-label {
+  fill: #1a1a22;
+  pointer-events: none;
+  font-weight: 500;
+}
+
+.segment-label.core-label {
+  font-weight: 700;
+}
+
+.center-hole {
+  fill: var(--bg);
+}
+
+#panel {
+  width: min(380px, 92vw);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  min-height: 260px;
+  position: sticky;
+  top: 1.5rem;
+}
+
+#panel-empty p {
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 0.5rem;
+}
+
+#song-feeling {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+#song-art {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 0 1rem;
+}
+
+#song-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+#song-album {
+  color: var(--text-dim);
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+#player-wrap {
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: var(--text-dim);
+}
+
+@media (max-width: 720px) {
+  #panel {
+    position: static;
+  }
+}

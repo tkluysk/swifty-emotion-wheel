@@ -1,0 +1,265 @@
+{
+  "core": [
+    {
+      "name": "Anger",
+      "color": "#e0457b",
+      "mid": [
+        {
+          "name": "Envy",
+          "outer": [
+            { "name": "Envy", "song": "I Did Something Bad", "album": "reputation", "spotifyId": "4svZDCRz4cJoneBpjpx8DJ" }
+          ]
+        },
+        {
+          "name": "Irritable",
+          "outer": [
+            { "name": "Irritable", "song": "Better Than Revenge", "album": "Speak Now", "spotifyId": "2ythurkTtSiyfK7GprJoFW" }
+          ]
+        },
+        {
+          "name": "Exasperated",
+          "outer": [
+            { "name": "Exasperated", "song": "mad woman", "album": "folklore", "spotifyId": "4o79qgosTZPS0gtsr4kpB3" }
+          ]
+        },
+        {
+          "name": "Rage",
+          "outer": [
+            { "name": "Rage", "song": "Vigilante Shit", "album": "Midnights", "spotifyId": "1xwAWUI6Dj0WGC3KiUPN0O" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fear",
+      "color": "#ef7c5c",
+      "mid": [
+        {
+          "name": "Scared",
+          "outer": [
+            { "name": "Scared", "song": "The Other Side Of The Door (Taylor's Version)", "album": "Fearless (Taylor's Version)", "spotifyId": "1cSFlSBdpT4F5vb1frQ231" }
+          ]
+        },
+        {
+          "name": "Insecure",
+          "outer": [
+            { "name": "Insecure", "song": "mirrorball", "album": "folklore", "spotifyId": "3zBBJ6LVn8Y9JnDrnPxvMC" }
+          ]
+        },
+        {
+          "name": "Nervous",
+          "outer": [
+            { "name": "Nervous", "song": "my tears ricochet", "album": "folklore", "spotifyId": "3kX3txGzDybHwvx8Cwedgi" }
+          ]
+        },
+        {
+          "name": "Horror",
+          "outer": [
+            { "name": "Terror", "song": "no body, no crime (feat. HAIM)", "album": "evermore", "spotifyId": "6NriykdkRrjQMZo1sfVYUo" },
+            { "name": "Horror", "song": "Who's Afraid of Little Old Me?", "album": "THE TORTURED POETS DEPARTMENT", "spotifyId": "36t6frENUtCYKuZus6aYDO" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disgust",
+      "color": "#8b6fc4",
+      "mid": [
+        {
+          "name": "Disgust",
+          "outer": [
+            { "name": "Disgust", "song": "Look What You Made Me Do", "album": "reputation", "spotifyId": "1P17dC1amhFzptugyAO7Il" }
+          ]
+        },
+        {
+          "name": "Suffering",
+          "outer": [
+            { "name": "Suffering", "song": "Soon You'll Get Better (feat. The Chicks)", "album": "Lover", "spotifyId": "4AYtqFyFbX0Xkc2wtcygTr" }
+          ]
+        },
+        {
+          "name": "Sadness",
+          "outer": [
+            { "name": "Disappointed", "song": "This Is Why We Can't Have Nice Things", "album": "reputation", "spotifyId": "07NxDD1iKCHbAldceD7QLP" },
+            { "name": "Sadness", "song": "champagne problems", "album": "evermore", "spotifyId": "0sY6ZUTh4yoctD8VIXz339" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sadness",
+      "color": "#7a8fc9",
+      "mid": [
+        {
+          "name": "Shameful",
+          "outer": [
+            { "name": "Shameful", "song": "The Story Of Us (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "6dTA6y0C2ReQklntzZl8l3" }
+          ]
+        },
+        {
+          "name": "Neglected",
+          "outer": [
+            { "name": "Neglected", "song": "The Archer", "album": "Lover", "spotifyId": "3pHkh7d0lzM2AldUtz2x37" }
+          ]
+        },
+        {
+          "name": "Despair",
+          "outer": [
+            { "name": "Despair", "song": "marjorie", "album": "evermore", "spotifyId": "77fHtse81VKtp5CECYhl8D" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Surprise",
+      "color": "#5fb6b0",
+      "mid": [
+        {
+          "name": "Stunned",
+          "outer": [
+            { "name": "Stunned", "song": "Wildest Dreams (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "1Ov37jtRQ2YNAe8HzfczkL" }
+          ]
+        },
+        {
+          "name": "Confused",
+          "outer": [
+            { "name": "Confused", "song": "Delicate", "album": "reputation", "spotifyId": "6NFyWDv5CjfwuzoCkw47Xf" }
+          ]
+        },
+        {
+          "name": "Amazed",
+          "outer": [
+            { "name": "Amazed", "song": "Enchanted (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "3sW3oSbzsfecv9XoUdGs7h" }
+          ]
+        },
+        {
+          "name": "Overcome",
+          "outer": [
+            { "name": "Overcome", "song": "You're On Your Own, Kid", "album": "Midnights", "spotifyId": "3pcj6pKgCri0rPgZFKCsAW" }
+          ]
+        },
+        {
+          "name": "Moved",
+          "outer": [
+            { "name": "Moved", "song": "seven", "album": "folklore", "spotifyId": "2vJ7QvyCiR4DaHxwO58izA" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disillusioned",
+      "color": "#5fa3b8",
+      "mid": [
+        {
+          "name": "Astonished",
+          "outer": [
+            { "name": "Astonished", "song": "the last great american dynasty", "album": "folklore", "spotifyId": "2Eeur20xVqfUoM3Q7EFPFt" }
+          ]
+        },
+        {
+          "name": "Awe-struck",
+          "outer": [
+            { "name": "Awe-struck", "song": "the 1", "album": "folklore", "spotifyId": "0Jlcvv8IykzHaSmj49uNW8" }
+          ]
+        },
+        {
+          "name": "Astounded",
+          "outer": [
+            { "name": "Astounded", "song": "long story short", "album": "evermore", "spotifyId": "0vVMlbdYx2080Oa9FndPZr" }
+          ]
+        },
+        {
+          "name": "Speechless",
+          "outer": [
+            { "name": "Speechless", "song": "exile (feat. Bon Iver)", "album": "folklore", "spotifyId": "4pvb0WLRcMtbPGmtejJJ6y" }
+          ]
+        },
+        {
+          "name": "Perplexed",
+          "outer": [
+            { "name": "Perplexed", "song": "Would've, Could've, Should've", "album": "Midnights (3am Edition)", "spotifyId": "0aV5uARAknQgYhBaK944FP" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Love",
+      "color": "#e8d16a",
+      "mid": [
+        {
+          "name": "Tenderness",
+          "outer": [
+            { "name": "Tenderness", "song": "invisible string", "album": "folklore", "spotifyId": "6VsvKPJ4xjVNKpI8VVZ3SV" }
+          ]
+        },
+        {
+          "name": "Desire",
+          "outer": [
+            { "name": "Desire", "song": "Out Of The Woods (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "045ZeOHPIzhxxsm8bq5kyE" }
+          ]
+        },
+        {
+          "name": "Longing",
+          "outer": [
+            { "name": "Longing", "song": "Cornelia Street", "album": "Lover", "spotifyId": "12M5uqx0ZuwkpLp5rJim1a" }
+          ]
+        },
+        {
+          "name": "Affectionate",
+          "outer": [
+            { "name": "Affectionate", "song": "Lover", "album": "Lover", "spotifyId": "44v9m12y9b5KhhBcfvZqOB" }
+          ]
+        },
+        {
+          "name": "Enthralled",
+          "outer": [
+            { "name": "Enthralled", "song": "King Of My Heart", "album": "reputation", "spotifyId": "7HuBDWi18s4aJM8UFnNheH" },
+            { "name": "Rapture", "song": "New Year's Day", "album": "reputation", "spotifyId": "7F5oktn5YOsR9eR5YsFtqb" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Joy",
+      "color": "#8bc48a",
+      "mid": [
+        {
+          "name": "Enthusiastic",
+          "outer": [
+            { "name": "Enthusiastic", "song": "You Need To Calm Down", "album": "Lover", "spotifyId": "06KgU0rndiDums7Bl4XEUi" }
+          ]
+        },
+        {
+          "name": "Optimistic",
+          "outer": [
+            { "name": "Optimistic", "song": "Long Live", "album": "Speak Now", "spotifyId": "4hqJ4bSlYJOXb6Z4SRmzxs" }
+          ]
+        },
+        {
+          "name": "Proud",
+          "outer": [
+            { "name": "Proud", "song": "The Man", "album": "Lover", "spotifyId": "3RauEVgRgj1IuWdJ9fDs70" }
+          ]
+        },
+        {
+          "name": "Cheerful",
+          "outer": [
+            { "name": "Cheerful", "song": "Paper Rings", "album": "Lover", "spotifyId": "4y5bvROuBDPr5fuwXbIBZR" }
+          ]
+        },
+        {
+          "name": "Happy",
+          "outer": [
+            { "name": "Happy", "song": "Fifteen (Taylor's Version)", "album": "Fearless (Taylor's Version)", "spotifyId": "2nqio0SfWg6gh2eCtfuMa5" }
+          ]
+        },
+        {
+          "name": "Content",
+          "outer": [
+            { "name": "Content", "song": "peace", "album": "folklore", "spotifyId": "38D9g9Ku6oEd0sg378WBuV" }
+          ]
+        }
+      ]
+    }
+  ]
+}

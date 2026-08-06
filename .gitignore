@@ -1,0 +1,13 @@
+# amplify
+node_modules
+.amplify
+amplify_outputs*
+amplifyconfiguration*
+
+# env
+.env
+.env.local
+.env.*.local
+
+# misc
+.DS_Store
