@@ -3,25 +3,26 @@
     {
       "name": "Anger",
       "color": "#e0457b",
+      "song": "Vigilante Shit", "album": "Midnights", "spotifyId": "1xwAWUI6Dj0WGC3KiUPN0O",
       "mid": [
-        { "name": "Rage", "outer": [
+        { "name": "Rage", "song": "I Did Something Bad", "album": "reputation", "spotifyId": "4svZDCRz4cJoneBpjpx8DJ", "outer": [
           { "name": "Dread", "song": "Anti-Hero", "album": "Midnights", "spotifyId": "0V3wPSX9ygBnCm8psDIegu" },
           { "name": "Hate", "song": "Bad Blood (feat. Kendrick Lamar) (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "6qAcApH8obo8eqatCKUHd9" },
           { "name": "Hostile", "song": "mad woman", "album": "folklore", "spotifyId": "4o79qgosTZPS0gtsr4kpB3" }
         ] },
-        { "name": "Exasperated", "outer": [
+        { "name": "Exasperated", "song": "The Story Of Us (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "6dTA6y0C2ReQklntzZl8l3", "outer": [
           { "name": "Agitated", "song": null, "album": null, "spotifyId": null },
           { "name": "Frustrated", "song": "The Man", "album": "Lover", "spotifyId": "3RauEVgRgj1IuWdJ9fDs70" }
         ] },
-        { "name": "Irritable", "outer": [
+        { "name": "Irritable", "song": "no body, no crime (feat. HAIM)", "album": "evermore", "spotifyId": "6NriykdkRrjQMZo1sfVYUo", "outer": [
           { "name": "Annoyed", "song": "Picture To Burn", "album": "Taylor Swift", "spotifyId": "32mVHdy0bi1XKgr0ajsBlG" },
           { "name": "Aggravated", "song": "Better Than Revenge (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "0NwGC0v03ysCYINtg6ns58" }
         ] },
-        { "name": "Envy", "outer": [
+        { "name": "Envy", "song": "Better Man (Taylor's Version) (From The Vault)", "album": "Red (Taylor's Version)", "spotifyId": "4OmFmE0fzcMG6g0Y8p4eSD", "outer": [
           { "name": "Resentful", "song": "This Is Why We Can't Have Nice Things", "album": "reputation", "spotifyId": "07NxDD1iKCHbAldceD7QLP" },
           { "name": "Jealous", "song": "Better Than Revenge (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "0NwGC0v03ysCYINtg6ns58" }
         ] },
-        { "name": "Disgust", "outer": [
+        { "name": "Disgust", "song": "Now That We Don't Talk (Taylor's Version) (From The Vault)", "album": "1989 (Taylor's Version)", "spotifyId": "5KD6AEm19QnMbfWpfoOHMl", "outer": [
           { "name": "Contempt", "song": "Look What You Made Me Do", "album": "reputation", "spotifyId": "1P17dC1amhFzptugyAO7Il" },
           { "name": "Revolted", "song": null, "album": null, "spotifyId": null }
         ] }
@@ -30,28 +31,29 @@
     {
       "name": "Sadness",
       "color": "#8b6fc4",
+      "song": "Bigger Than The Whole Sky", "album": "Midnights (3am Edition)", "spotifyId": "0BiqmkasE5FdrChwKfVp8X",
       "mid": [
-        { "name": "Suffering", "outer": [
+        { "name": "Suffering", "song": "Death By A Thousand Cuts", "album": "Lover", "spotifyId": "2dgFqt3w9xIQRjhPtwNk3D", "outer": [
           { "name": "Agony", "song": "Would've, Could've, Should've", "album": "Midnights (3am Edition)", "spotifyId": "0aV5uARAknQgYhBaK944FP" },
           { "name": "Hurt", "song": "All Too Well (10 Minute Version) (Taylor's Version) (From The Vault)", "album": "Red (Taylor's Version)", "spotifyId": "1yaVxrfeMhCbzdstO16ENE" }
         ] },
-        { "name": "Sadness", "outer": [
+        { "name": "Sadness", "song": "loml", "album": "THE TORTURED POETS DEPARTMENT", "spotifyId": "3YkNIrAvbKNrrwwEd7NVLl", "outer": [
           { "name": "Depressed", "song": null, "album": null, "spotifyId": null },
           { "name": "Sorrow", "song": "marjorie", "album": "evermore", "spotifyId": "7vBNFh3NIZTj6tB5s1IBjE" }
         ] },
-        { "name": "Disappointed", "outer": [
+        { "name": "Disappointed", "song": "Fifteen (Taylor's Version)", "album": "Fearless (Taylor's Version)", "spotifyId": "2nqio0SfWg6gh2eCtfuMa5", "outer": [
           { "name": "Dismayed", "song": "Miss Americana & The Heartbreak Prince", "album": "Lover", "spotifyId": "3hHvqjjgKefqxRW4HHMTS1" },
           { "name": "Displeased", "song": "Tolerate It", "album": "evermore", "spotifyId": "0PurA4JVJ8YQgSVopY8fn6" }
         ] },
-        { "name": "Shameful", "outer": [
+        { "name": "Shameful", "song": "Dear John (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "1zU8j1x3yi9xalMF96pzKp", "outer": [
           { "name": "Regretful", "song": "champagne problems", "album": "evermore", "spotifyId": "0sY6ZUTh4yoctD8VIXz339" },
           { "name": "Guilty", "song": "champagne problems", "album": "evermore", "spotifyId": "0sY6ZUTh4yoctD8VIXz339" }
         ] },
-        { "name": "Neglected", "outer": [
+        { "name": "Neglected", "song": "You're Losing Me (From The Vault)", "album": "Midnights (The Late Night Edition)", "spotifyId": "3CWq0pAKKTWb0K4yiglDc4", "outer": [
           { "name": "Isolated", "song": "The Archer", "album": "Lover", "spotifyId": "3pHkh7d0lzM2AldUtz2x37" },
           { "name": "Lonely", "song": "exile (feat. Bon Iver)", "album": "folklore", "spotifyId": "4pvb0WLRcMtbPGmtejJJ6y" }
         ] },
-        { "name": "Despair", "outer": [
+        { "name": "Despair", "song": "Bigger Than The Whole Sky", "album": "Midnights (3am Edition)", "spotifyId": "0BiqmkasE5FdrChwKfVp8X", "outer": [
           { "name": "Grief", "song": "marjorie", "album": "evermore", "spotifyId": "7vBNFh3NIZTj6tB5s1IBjE" },
           { "name": "Powerless", "song": "Soon You'll Get Better (feat. The Chicks)", "album": "Lover", "spotifyId": "4AYtqFyFbX0Xkc2wtcygTr" }
         ] }
@@ -60,24 +62,25 @@
     {
       "name": "Surprise",
       "color": "#5fb6b0",
+      "song": "the last great american dynasty", "album": "folklore", "spotifyId": "2Eeur20xVqfUoM3Q7EFPFt",
       "mid": [
-        { "name": "Stunned", "outer": [
+        { "name": "Stunned", "song": "champagne problems", "album": "evermore", "spotifyId": "0sY6ZUTh4yoctD8VIXz339", "outer": [
           { "name": "Shocked", "song": null, "album": null, "spotifyId": null },
           { "name": "Dismayed", "song": null, "album": null, "spotifyId": null }
         ] },
-        { "name": "Confused", "outer": [
+        { "name": "Confused", "song": "Cruel Summer", "album": "Lover", "spotifyId": "1BxfuPKGuaTgP7aM0Bbdwr", "outer": [
           { "name": "Disillusioned", "song": null, "album": null, "spotifyId": null },
           { "name": "Perplexed", "song": "Question...?", "album": "Midnights (3am Edition)", "spotifyId": "7oomkQSYf1ia2VnVEWfFIU" }
         ] },
-        { "name": "Amazed", "outer": [
+        { "name": "Amazed", "song": "Enchanted (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "3sW3oSbzsfecv9XoUdGs7h", "outer": [
           { "name": "Astonished", "song": null, "album": null, "spotifyId": null },
           { "name": "Awe-struck", "song": "Daylight", "album": "Lover", "spotifyId": "1fzAuUVbzlhZ1lJAx9PtY6" }
         ] },
-        { "name": "Overcome", "outer": [
+        { "name": "Overcome", "song": "the lakes", "album": "folklore (deluxe version)", "spotifyId": "65YnIFKuwUCLIqMHAP8TAm", "outer": [
           { "name": "Speechless", "song": null, "album": null, "spotifyId": null },
           { "name": "Astounded", "song": null, "album": null, "spotifyId": null }
         ] },
-        { "name": "Moved", "outer": [
+        { "name": "Moved", "song": "Innocent (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "12nBPF4Rh4XLFJV0YLN7uj", "outer": [
           { "name": "Stimulated", "song": null, "album": null, "spotifyId": null },
           { "name": "Touched", "song": "invisible string", "album": "folklore", "spotifyId": "6VsvKPJ4xjVNKpI8VVZ3SV" }
         ] }
@@ -86,32 +89,33 @@
     {
       "name": "Joy",
       "color": "#8bc48a",
+      "song": "Long Live (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "4hqJ4bSlYJOXb6Z4SRmzxs",
       "mid": [
-        { "name": "Content", "outer": [
+        { "name": "Content", "song": "Long Story Short", "album": "evermore", "spotifyId": "0vVMlbdYx2080Oa9FndPZr", "outer": [
           { "name": "Pleased", "song": "New Year's Day", "album": "reputation", "spotifyId": "7F5oktn5YOsR9eR5YsFtqb" },
           { "name": "Satisfied", "song": null, "album": null, "spotifyId": null }
         ] },
-        { "name": "Happy", "outer": [
+        { "name": "Happy", "song": "Shake It Off (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "50yNTF0Od55qnHLxYsA5Pw", "outer": [
           { "name": "Amused", "song": "Blank Space (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "0108kcWLnn2HlH2kedi1gn" },
           { "name": "Delighted", "song": "Paper Rings", "album": "Lover", "spotifyId": "4y5bvROuBDPr5fuwXbIBZR" }
         ] },
-        { "name": "Cheerful", "outer": [
+        { "name": "Cheerful", "song": "22 (Taylor's Version)", "album": "Red (Taylor's Version)", "spotifyId": "5WzJ6723XqI2JpyGUDxREq", "outer": [
           { "name": "Jovial", "song": null, "album": null, "spotifyId": null },
           { "name": "Blissful", "song": "Lover", "album": "Lover", "spotifyId": "6hEu02dxF3IOuVipVVyC1U" }
         ] },
-        { "name": "Proud", "outer": [
+        { "name": "Proud", "song": "Karma", "album": "Midnights", "spotifyId": "7KokYm8cMIXCsGVmUvKtqf", "outer": [
           { "name": "Triumphant", "song": "Long Live (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "4hqJ4bSlYJOXb6Z4SRmzxs" },
           { "name": "Illustrious", "song": null, "album": null, "spotifyId": null }
         ] },
-        { "name": "Optimistic", "outer": [
+        { "name": "Optimistic", "song": "The Alchemy", "album": "THE TORTURED POETS DEPARTMENT", "spotifyId": "1dhMTsEZz6ZEquGvmzVoHn", "outer": [
           { "name": "Eager", "song": null, "album": null, "spotifyId": null },
           { "name": "Hopeful", "song": "Begin Again (Taylor's Version)", "album": "Red (Taylor's Version)", "spotifyId": "38TSM6TDx1fzs7JnioMQXe" }
         ] },
-        { "name": "Enthusiastic", "outer": [
+        { "name": "Enthusiastic", "song": "Our Song", "album": "Taylor Swift", "spotifyId": "3M5TDR9IK2Sq1LeKhntjWB", "outer": [
           { "name": "Excited", "song": "Sparks Fly (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "3MytWN8L7shNYzGl4tAKRp" },
           { "name": "Zeal", "song": null, "album": null, "spotifyId": null }
         ] },
-        { "name": "Elation", "outer": [
+        { "name": "Elation", "song": "Bejeweled", "album": "Midnights", "spotifyId": "3qoftcUZaUOncvIYjFSPdE", "outer": [
           { "name": "Euphoric", "song": "King Of My Heart", "album": "reputation", "spotifyId": "7HuBDWi18s4aJM8UFnNheH" },
           { "name": "Jubilation", "song": "New Romantics (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "5M787RexsAiVYjQusM98CV" }
         ] }
@@ -120,24 +124,25 @@
     {
       "name": "Love",
       "color": "#e8d16a",
+      "song": "Love Story (Taylor's Version)", "album": "Fearless (Taylor's Version)", "spotifyId": "6YvqWjhGD8mB5QXcbcUKtx",
       "mid": [
-        { "name": "Enthralled", "outer": [
+        { "name": "Enthralled", "song": "Gorgeous", "album": "reputation", "spotifyId": "12WvaS3V4dPRBU2o37vX69", "outer": [
           { "name": "Enchanted", "song": "Enchanted (Taylor's Version)", "album": "Speak Now (Taylor's Version)", "spotifyId": "3sW3oSbzsfecv9XoUdGs7h" },
           { "name": "Rapture", "song": "willow", "album": "evermore", "spotifyId": "3Uo7WG0vmLQ07WB4BDwy7D" }
         ] },
-        { "name": "Affectionate", "outer": [
+        { "name": "Affectionate", "song": "Stay Stay Stay (Taylor's Version)", "album": "Red (Taylor's Version)", "spotifyId": "7eQj6r5PIdYKEIZjucBMcq", "outer": [
           { "name": "Romantic", "song": "Everything Has Changed (feat. Ed Sheeran) (Taylor's Version)", "album": "Red (Taylor's Version)", "spotifyId": "7qEUFOVcxRI19tbT68JcYK" },
           { "name": "Fondness", "song": "The Best Day (Taylor's Version)", "album": "Fearless (Taylor's Version)", "spotifyId": "6ON9UuIq49xXY9GPmHIYRp" }
         ] },
-        { "name": "Longing", "outer": [
+        { "name": "Longing", "song": "august", "album": "folklore", "spotifyId": "5jkmNosiv4Tt9JRP8JqT59", "outer": [
           { "name": "Sentimental", "song": "seven", "album": "folklore", "spotifyId": "6KJqZcs9XDgVck7Lg9QOTC" },
           { "name": "Attracted", "song": "I Knew You Were Trouble (Taylor's Version)", "album": "Red (Taylor's Version)", "spotifyId": "6AtZLIzUINvExIUy4QhdjP" }
         ] },
-        { "name": "Desire", "outer": [
+        { "name": "Desire", "song": "Dress", "album": "reputation", "spotifyId": "6oVxXO5oQ4pTpO8RSnkzvv", "outer": [
           { "name": "Passion", "song": "Delicate", "album": "reputation", "spotifyId": "6NFyWDv5CjfwuzoCkw47Xf" },
           { "name": "Infatuation", "song": "Wildest Dreams (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "1Ov37jtRQ2YNAe8HzfczkL" }
         ] },
-        { "name": "Tenderness", "outer": [
+        { "name": "Tenderness", "song": "Sweet Nothing", "album": "Midnights", "spotifyId": "3zmwONxswBAzGwExPugSLN", "outer": [
           { "name": "Caring", "song": "Soon You'll Get Better (feat. The Chicks)", "album": "Lover", "spotifyId": "4AYtqFyFbX0Xkc2wtcygTr" },
           { "name": "Compassionate", "song": "Never Grow Up (Taylor's Version)", "album": "Fearless (Taylor's Version)", "spotifyId": "2EFZ9emtKWEglWUQGEQ3P9" }
         ] }
@@ -146,28 +151,29 @@
     {
       "name": "Fear",
       "color": "#ef7c5c",
+      "song": "Out Of The Woods (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "045ZeOHPIzhxxsm8bq5kyE",
       "mid": [
-        { "name": "Peaceful", "outer": [
+        { "name": "Peaceful", "song": "It's Nice To Have A Friend", "album": "Lover", "spotifyId": "1SmiQ65iSAbPto6gPFlBYm", "outer": [
           { "name": "Relieved", "song": "Clean (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "2ByBBvpR9b7IynvRmnG7kG" },
           { "name": "Satisfied", "song": "Long Story Short", "album": "evermore", "spotifyId": "0vVMlbdYx2080Oa9FndPZr" }
         ] },
-        { "name": "Scared", "outer": [
+        { "name": "Scared", "song": "Cornelia Street", "album": "Lover", "spotifyId": "12M5uqx0ZuwkpLp5rJim1a", "outer": [
           { "name": "Frightened", "song": null, "album": null, "spotifyId": null },
           { "name": "Helpless", "song": "Breathe (feat. Colbie Caillat) (Taylor's Version)", "album": "Fearless (Taylor's Version)", "spotifyId": "7HC7R2D8WjXVcUHJyEGjRs" }
         ] },
-        { "name": "Terror", "outer": [
+        { "name": "Terror", "song": "...Ready For It?", "album": "reputation", "spotifyId": "2yLa0QULdQr0qAIvVwN6B5", "outer": [
           { "name": "Panic", "song": "I Know Places (Taylor's Version)", "album": "1989 (Taylor's Version)", "spotifyId": "1ULabO0PEsdJekqVH6G10G" },
           { "name": "Hysterical", "song": "Down Bad", "album": "THE TORTURED POETS DEPARTMENT", "spotifyId": "75ie0jesCvvQWknAp2kGTj" }
         ] },
-        { "name": "Insecure", "outer": [
+        { "name": "Insecure", "song": "The Archer", "album": "Lover", "spotifyId": "3pHkh7d0lzM2AldUtz2x37", "outer": [
           { "name": "Inferior", "song": "mirrorball", "album": "folklore", "spotifyId": "3zBBJ6LVn8Y9JnDrnPxvMC" },
           { "name": "Inadequate", "song": "this is me trying", "album": "folklore", "spotifyId": "3pQ2cHpl1W4whakvbrUca0" }
         ] },
-        { "name": "Nervous", "outer": [
+        { "name": "Nervous", "song": "Down Bad", "album": "THE TORTURED POETS DEPARTMENT", "spotifyId": "75ie0jesCvvQWknAp2kGTj", "outer": [
           { "name": "Worried", "song": "peace", "album": "folklore", "spotifyId": "3YT3zOo7VgAlvW1yOUMXDg" },
           { "name": "Anxious", "song": "Nothing New (feat. Phoebe Bridgers) (Taylor's Version) (From The Vault)", "album": "Red (Taylor's Version)", "spotifyId": "01K4zKU104LyJ8gMb7227B" }
         ] },
-        { "name": "Horror", "outer": [
+        { "name": "Horror", "song": "epiphany", "album": "folklore", "spotifyId": "08fa9LFcFBTcilB3iq2e2A", "outer": [
           { "name": "Mortified", "song": null, "album": null, "spotifyId": null }
         ] }
       ]

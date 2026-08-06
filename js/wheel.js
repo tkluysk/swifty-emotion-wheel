@@ -28,13 +28,16 @@
   if (metadataUrl) {
     const allIds = [];
     for (const core of data.core) {
+      if (core.spotifyId) allIds.push(core.spotifyId);
       for (const mid of core.mid) {
+        if (mid.spotifyId) allIds.push(mid.spotifyId);
         for (const outer of mid.outer) {
           if (outer.spotifyId) allIds.push(outer.spotifyId);
         }
       }
     }
-    fetch(`${metadataUrl}?ids=${allIds.join(",")}`)
+    const uniqueIds = [...new Set(allIds)];
+    fetch(`${metadataUrl}?ids=${uniqueIds.join(",")}`)
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (!json?.tracks) return;
@@ -116,6 +119,39 @@
     return label;
   }
 
+  function makeSelectable(pathEl, node, breadcrumbParts) {
+    const hasSong = Boolean(node.spotifyId);
+    pathEl.classList.toggle("no-song", !hasSong);
+    pathEl.setAttribute(
+      "aria-label",
+      hasSong ? `${node.name}: ${node.song}` : `${node.name}: no song mapped yet`
+    );
+    if (hasSong) {
+      pathEl.setAttribute("tabindex", "0");
+      pathEl.setAttribute("role", "button");
+      pathEl.dataset.feeling = node.name;
+      pathEl.dataset.breadcrumb = breadcrumbParts.join(" → ");
+      pathEl.dataset.song = node.song;
+      pathEl.dataset.album = node.album;
+      pathEl.dataset.spotifyId = node.spotifyId;
+    }
+
+    const select = () => {
+      if (!hasSong) return;
+      if (selectedSegment) selectedSegment.classList.remove("selected");
+      pathEl.classList.add("selected");
+      selectedSegment = pathEl;
+      showSong(pathEl.dataset);
+    };
+    pathEl.addEventListener("click", select);
+    pathEl.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        select();
+      }
+    });
+  }
+
   // count total outer leaves per core, to size angles proportionally
   let totalOuterLeaves = 0;
   for (const core of data.core) {
@@ -138,6 +174,7 @@
       class: "segment",
     });
     corePath.dataset.level = "core";
+    makeSelectable(corePath, core, [core.name]);
     svg.appendChild(corePath);
     svg.appendChild(addLabel(R_CENTER_HOLE, R_CORE, coreStart, coreEnd, core.name, "core-label", 15));
 
@@ -154,6 +191,7 @@
         fill: midColor,
         class: "segment",
       });
+      makeSelectable(midPath, mid, [core.name]);
       svg.appendChild(midPath);
       svg.appendChild(addLabel(R_CORE, R_MID, midStart, midEnd, mid.name, "", 12.5));
 
@@ -162,43 +200,14 @@
       for (const outer of mid.outer) {
         const outerStart = outerCursor;
         const outerEnd = outerCursor + outerAngleSpan;
-        const hasSong = Boolean(outer.spotifyId);
         const outerColor = shade(coreColor, 30);
 
         const outerPath = makeEl("path", {
           d: arcPath(R_MID, R_OUTER, outerStart, outerEnd),
           fill: outerColor,
-          class: "segment" + (hasSong ? "" : " no-song"),
-          "aria-label": hasSong ? `${outer.name}: ${outer.song}` : `${outer.name}: no song mapped yet`,
+          class: "segment",
         });
-        if (hasSong) {
-          outerPath.setAttribute("tabindex", "0");
-          outerPath.setAttribute("role", "button");
-        }
-        outerPath.dataset.feeling = outer.name;
-        outerPath.dataset.core = core.name;
-        outerPath.dataset.mid = mid.name;
-        if (hasSong) {
-          outerPath.dataset.song = outer.song;
-          outerPath.dataset.album = outer.album;
-          outerPath.dataset.spotifyId = outer.spotifyId;
-        }
-
-        const select = () => {
-          if (!hasSong) return;
-          if (selectedSegment) selectedSegment.classList.remove("selected");
-          outerPath.classList.add("selected");
-          selectedSegment = outerPath;
-          showSong(outerPath.dataset);
-        };
-        outerPath.addEventListener("click", select);
-        outerPath.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            select();
-          }
-        });
-
+        makeSelectable(outerPath, outer, [core.name, mid.name]);
         svg.appendChild(outerPath);
         svg.appendChild(addLabel(R_MID, R_OUTER, outerStart, outerEnd, outer.name, "", 12.5));
 
@@ -218,7 +227,7 @@
     panelSong.hidden = false;
     const live = liveMetadata[ds.spotifyId];
 
-    breadcrumbEl.textContent = `${ds.core} → ${ds.mid}`;
+    breadcrumbEl.textContent = ds.breadcrumb;
     feelingEl.textContent = ds.feeling;
     titleEl.textContent = live?.name ?? ds.song;
     albumEl.textContent = live?.album ?? ds.album;
