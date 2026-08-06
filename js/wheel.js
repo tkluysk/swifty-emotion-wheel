@@ -87,18 +87,20 @@
     const midAngle = (startAngle + endAngle) / 2;
     const midR = (r1 + r2) / 2;
     const [x, y] = polar(CX, CY, midR, midAngle);
-    // tangential orientation: text baseline runs along the arc (like the
-    // reference wheel), flipped upright on the left half so it isn't upside down.
-    let rot = midAngle;
-    if (midAngle > 90 && midAngle < 270) rot += 180;
+    // radial orientation: text runs along the spoke (perpendicular to the
+    // arc), like the reference wheel. flip upright whenever the rotation
+    // would otherwise render the text upside down.
+    let rot = midAngle + 90;
+    const normalized = ((rot % 360) + 360) % 360;
+    if (normalized > 90 && normalized < 270) rot += 180;
 
-    // shrink font to fit the available arc length + radial band width
+    // shrink font to fit the available radial band width + arc length
     const arcLen = ((endAngle - startAngle) * Math.PI / 180) * midR;
     const bandWidth = r2 - r1;
     const approxCharWidth = 0.62;
-    const fontFromArc = arcLen / Math.max(text.length * approxCharWidth, 1);
-    const fontFromBand = bandWidth * 0.85;
-    const fontSize = Math.max(6, Math.min(maxFont, fontFromArc, fontFromBand));
+    const fontFromBand = bandWidth / Math.max(text.length * approxCharWidth, 1);
+    const fontFromArc = arcLen * 0.85;
+    const fontSize = Math.max(6, Math.min(maxFont, fontFromBand, fontFromArc));
 
     const label = makeEl("text", {
       x, y,
