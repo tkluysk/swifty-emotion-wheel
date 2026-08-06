@@ -5,7 +5,8 @@
       "Bash(node check.js)",
       "Bash(lsof -ti:8765 -sTCP:LISTEN)",
       "Bash(xargs -r kill)",
-      "Bash(npm --version)"
+      "Bash(npm --version)",
+      "Bash(npm install *)"
     ]
   }
 }
