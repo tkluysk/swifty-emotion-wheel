@@ -79,6 +79,11 @@ main {
   stroke-width: 1.5;
   transition: filter 0.15s ease, transform 0.15s ease;
   transform-origin: 400px 400px;
+  outline: none;
+}
+
+.segment:focus {
+  outline: none;
 }
 
 .segment:hover,
