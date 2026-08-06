@@ -13,43 +13,12 @@
   const feelingEl = document.getElementById("song-feeling");
   const titleEl = document.getElementById("song-title");
   const albumEl = document.getElementById("song-album");
-  const artEl = document.getElementById("song-art");
   const player = document.getElementById("player");
 
   let selectedSegment = null;
 
   const res = await fetch("data/wheel.json");
   const data = await res.json();
-
-  // live Spotify metadata (album art, verified title), keyed by track id.
-  // Falls back silently to the static data/wheel.json values if unset or unreachable.
-  const liveMetadata = {};
-  const metadataUrl = window.SPOTIFY_METADATA_URL;
-  if (metadataUrl) {
-    const allIds = [];
-    for (const core of data.core) {
-      if (core.spotifyId) allIds.push(core.spotifyId);
-      for (const mid of core.mid) {
-        if (mid.spotifyId) allIds.push(mid.spotifyId);
-        for (const outer of mid.outer) {
-          if (outer.spotifyId) allIds.push(outer.spotifyId);
-        }
-      }
-    }
-    const uniqueIds = [...new Set(allIds)];
-    fetch(`${metadataUrl}?ids=${uniqueIds.join(",")}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((json) => {
-        if (!json?.tracks) return;
-        for (const track of json.tracks) {
-          if (track) liveMetadata[track.id] = track;
-        }
-        if (selectedSegment) showSong(selectedSegment.dataset);
-      })
-      .catch(() => {
-        // no-op: static data already renders fine without live metadata
-      });
-  }
 
   function polar(cx, cy, r, angleDeg) {
     const a = ((angleDeg - 90) * Math.PI) / 180;
@@ -225,20 +194,11 @@
   function showSong(ds) {
     panelEmpty.hidden = true;
     panelSong.hidden = false;
-    const live = liveMetadata[ds.spotifyId];
 
     breadcrumbEl.textContent = ds.breadcrumb;
     feelingEl.textContent = ds.feeling;
-    titleEl.textContent = live?.name ?? ds.song;
-    albumEl.textContent = live?.album ?? ds.album;
-
-    if (live?.albumArtUrl) {
-      artEl.src = live.albumArtUrl;
-      artEl.alt = `${titleEl.textContent} album art`;
-      artEl.hidden = false;
-    } else {
-      artEl.hidden = true;
-    }
+    titleEl.textContent = ds.song;
+    albumEl.textContent = ds.album;
 
     player.src = `https://open.spotify.com/embed/track/${ds.spotifyId}?utm_source=generator`;
   }

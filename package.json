@@ -1,27 +1,6 @@
 {
   "name": "swifty-emotion-wheel",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@aws-amplify/backend": "^1.24.0",
-    "@aws-amplify/backend-cli": "^1.9.0",
-    "@types/aws-lambda": "^8.10.162",
-    "@types/node": "^26.1.2",
-    "aws-cdk-lib": "^2.244.0",
-    "constructs": "^10.8.1",
-    "esbuild": "^0.28.1",
-    "tsx": "^4.23.8",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "aws-amplify": "^6.20.0"
-  }
+  "description": "An interactive emotion wheel mapping feelings to Taylor Swift songs.",
+  "private": true
 }

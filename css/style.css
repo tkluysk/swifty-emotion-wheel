@@ -150,14 +150,6 @@ main {
   font-size: 1.6rem;
 }
 
-#song-art {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 8px;
-  display: block;
-  margin: 0 0 1rem;
-}
-
 #song-title {
   font-size: 1.1rem;
   font-weight: 600;
