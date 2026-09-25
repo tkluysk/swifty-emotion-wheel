@@ -1,4 +1,4 @@
-# Swifty Emotion Wheel
+# Swiftie Emotion Wheel
 
 An interactive emotion wheel (structure matches [The Junto Institute's](https://www.junto.co.uk/) Emotion & Feeling Wheel) that maps each feeling to a Taylor Swift song, with an embedded Spotify player.
 
